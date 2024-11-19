@@ -5,8 +5,6 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 
 
-const lightBox = new SimpleLightbox('.some-element a', { /* options */ });
-
 
 const images = [
   {
@@ -75,18 +73,17 @@ const images = [
 ];
 
 // Створення елементів галереї
-const galleryContainer = document.querySelector('.gallery');
-const galleryItemsMarkup = images.map(({ preview, original, description }) => `
+const galleryContainer = document.querySelector('ul.gallery');
+const galleryItemsMarkup = images.map(({preview, original, description}) => `
     <li class="gallery-item">
-	<a class="gallery-link" href="large-image.jpg">
-		<img 
-			class="gallery-image" 
-			src="small-image.jpg" 
-			alt="Image description" 
-			/>
+	<a class="gallery-link" href="${original}">
+		<img
+            class="gallery-image" 
+			src="${preview}" 
+			alt="${description}"
+          />
 	</a>
 </li>
-
 `).join('');
 
 // Додати елементи до DOM

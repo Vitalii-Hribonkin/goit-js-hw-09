@@ -4,21 +4,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feedback Form</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./css/2-form.css" />
   </head>
+
   <body>
-    <form class="feedback-form" autocomplete="off">
-      <label>
-        Email
-        <input type="email" name="email" autofocus />
+    <form class="form">
+      <label class="label-form"
+        >Email
+        <input type="email" name="email" class="input-form" />
       </label>
-      <label>
-        Message
-        <textarea name="message" rows="8"></textarea>
+      <label class="label-form"
+        >Message
+        <textarea name="message" class="textarea-form"></textarea>
       </label>
-      <button type="submit">Submit</button>
+      <button type="submit" class="btn-form">Submit</button>
     </form>
-    <script src="2-form.js" type="module"></script>
+
+    <script src="./js/2-form.js" type="module"></script>
   </body>
 </html>

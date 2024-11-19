@@ -5,7 +5,7 @@ const STORAGE_KEY = 'feedback-form-state';
 let formData = { email: '', message: '' };
 
 // Отримання посилань на елементи форми
-const form = document.querySelector('.feedback-form');
+const form = document.querySelector('.form');
 const emailInput = form.querySelector('input[name="email"]');
 const messageTextarea = form.querySelector('textarea[name="message"]');
 
