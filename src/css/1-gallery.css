@@ -8,6 +8,34 @@ ul {
     list-style-type: none;
 }
 
+ul {
+    display: flex;
+    gap: 180px;
+    padding-top: 24px;
+    margin-left: 250px;
+}
+
+.a-li-form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+    text-decoration: none;
+}
+
+.a-li-form:hover {
+    color: #4e75ff;
+    transition: 350ms;
+}
+
+.li-list:active {
+    color: #4e75ff;
+}
+
+
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
